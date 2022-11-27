@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 06</title>
+</head>
+<body>
+    <script>
+        let numA = parseFloat(prompt("Informe um número."))
+        let numB = parseFloat(prompt("Informe outro número."))
+        if (numA == numB){
+            document.write("Os números informados são iguais")
+        }
+        else{
+            if (numA > numB){
+                document.write("O número " + numA + " é maior do que " + numB + ". <br>")
+            }
+            else{
+                document.write("O número " + numB + " é maior do que " + numA + ". <br>")
+            }
+        }
+    </script>
+</body>
+</html>
+<!--
+    Desenvolva um algoritmo para ler dois valores e imprimir uma das
+três mensagens a seguir:
+    a. ‘Números iguais’, caso os números sejam iguais;
+    b. ‘Primeiro é maior’, caso o primeiro seja maior que o segundo;
+    c. ‘Segundo maior’, caso o segundo seja maior que o primeiro.
+-->

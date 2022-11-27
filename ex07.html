@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 07</title>
+</head>
+<body>
+    <script>
+        let questionamento = parseInt(prompt("Informe quantas maçãs deseja comprar."))
+        if (questionamento < 0){
+            alert("Informe um valor correto!")
+        }
+        else{
+            if (questionamento >= 0 && questionamento <= 11){
+                document.write("Sua compra foi de " + questionamento + " maçãs, e o valor ficou em R$" + (questionamento*0.3).toFixed(2) + ".")
+            }
+            else {
+                document.write("Sua compra foi de " + questionamento + " maçãs, e o valor ficou em R$" + (questionamento*0.25).toFixed(2) + ".")
+            }
+        }
+    </script>
+</body>
+</html>
+<!--
+    As maçãs desta estação custam R$0,30 se forem compradas
+menos do que uma dúzia, e R$0,25 se forem compradas pelo menos
+doze. Desenvolva um algoritmo que leia o número de maçãs
+compradas, calcule e escreva o valor total da compra.
+-->

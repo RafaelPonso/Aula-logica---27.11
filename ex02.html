@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+</head>
+<body>
+    <script>
+        let eleitores = 1000;
+        let brancos = 50;
+        let nulos = 150;
+        let validos = eleitores - (brancos + nulos)
+        document.write("O número total de eleitores é de " + eleitores +"<br>");
+        document.write("O número de votos em branco é de " + brancos + " que representa " + ((brancos/eleitores)*100 + "% do total de eleitores." + "<br>"))
+        document.write("O número de votos nulos é de " + nulos + " que representa " + ((nulos/eleitores)*100) + "% do total de eleitores." + "<br>")
+        document.write("O número de votos válidos é de " + validos + " que representa " + ((validos/eleitores)*100) + "% do total de eleitores.")
+    </script>
+</body>
+</html>
+<!--
+    Desenvolva um algoritmo para ler o número total de eleitores de um
+município, o número de votos brancos, nulos e válidos. Calcular e
+escrever o percentual que cada um representa em relação ao total
+de eleitores.
+-->

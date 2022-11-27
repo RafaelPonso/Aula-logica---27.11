@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 04</title>
+</head>
+<body>
+    <script>
+        let salario = parseFloat(prompt("Informe seu salário."))
+        if (salario <= 0) {
+            alert("Informe o valor correto do salário.")
+        }
+        else {
+            let vendas = parseInt(prompt("Informe quantos carros você vendeu esse mês."))
+            if (vendas < 0){
+                alert("Informe a quantidade correta de carros vendidos.")
+            }
+            else{
+                let valor = parseFloat(prompt("Informe o valor total dos carros vendidos."))
+                if (valor < 0){
+                    alert("Informe o valor correto dos carros vendidos!")
+                }
+                else{
+                    let comissao = vendas * 100
+                    let comissao2 = valor * 0.05
+                    let total = (salario + comissao + comissao2).toFixed(2)
+                    document.write("Seu salário é de R$" + salario + ".<br>")
+                    document.write("Você vendeu um total de " + vendas + " carros nesse mês. <br>")
+                    document.write("Esse mês você terá uma comissão de R$" + comissao + " (R$100,00 por carro). <br>")
+                    document.write("E seu bônus de 5% representa o valor de R$" + comissao2 + ".<br>")
+                    document.write("O valor que você receberá total esse mês é de R$" + total + ".")
+                }
+            }
+        }
+    </script>
+</body>
+</html>
+<!--
+    Uma revendedora de carros usados paga a seus funcionários
+vendedores um salário fixo por mês, mais uma comissão também
+fixa para cada carro vendido e mais 5% do valor das vendas por ele
+efetuadas. Escrever um algoritmo que leia o número de carros por
+ele vendidos, o valor total de suas vendas, o salário fixo e o valor que
+ele recebe por carro vendido. Calcule e escreva o salário final do
+vendedor.
+-->
